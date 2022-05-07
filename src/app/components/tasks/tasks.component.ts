@@ -30,4 +30,10 @@ export class TasksComponent implements OnInit {
     this.tasksService.updateTask(task).subscribe();
   }
 
+  addTask(task:Task):void{
+    this.tasksService.addTask(task).subscribe((task) => {
+      this.tasks.push(task);
+    });
+  }
+
 }
