@@ -17,7 +17,7 @@ export class ButtonComponent implements OnInit {
   }
 
   onClick():void {
-    this.btnClick.emit("click");
+    this.btnClick.emit();
   }
 
 }
